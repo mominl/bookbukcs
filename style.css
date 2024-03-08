@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+    font-family: Arial, sans-serif;
+
+
+    
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 50px;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 999;
+    transition: all linear 0.1s;
+    
+}
+#cursor {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+#blur {
+    height: 300px;
+    width: 300px;
+    background-color: rgba(255, 255, 0, 0.197);
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(30px);
+    z-index: 12;
+    color: r;
+}
+#nav img {
+    padding: 20px 30px;
+    height: 107px;
+}
+
+#nav h4 {
+    color: rgba(141, 128, 128, 0.608);
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+#nav i{
+    background-color: #ffffff;
+    position: relative;
+    padding: center;
+    cursor: pointer;
+    display: flex;
+}
+.circle {
+    width: 300px; /* Change this value as needed */
+    height: 300px; /* Change this value as needed */
+    border-radius: 50%; /* This makes the element a circle */
+    overflow: hidden; /* This hides the overflowing parts of the video */
+    position: absolute;
+    padding: 50px 30px;
+    bottom: 5%;
+    right: 7%;
+
+
+  }
+  
+  video {
+    width: 100%; /* Make the video fill the circle */
+    height: auto;
+    
+  }
+  
+
+#main {
+    position: relative;
+    color: #ffffff;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    top: 56%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 99;
+}
+
+#page1 h1 {
+    font-size: 50px;
+    font-weight: 600px;
+    position: relative;
+    color: #fdbc08e7;
+}
+
+#page1 h1::before {
+    content: "BUY . SELL . EXCHANGE";
+    position: absolute;
+    color: #211499f1;
+    top: -3px;
+    left: -2px;
+    -webkit-text-stroke: 2px #0891d04b;
+}
+
+#page1 h2 {
+    font-size: 35px;
+    font-weight: 300;
+    margin: 5px;
+
+}
+
+#page1 p {
+    font-size: 20px;
+    font-weight: 400;
+    position: center;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+#page2 {
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+}
+
+#login h1 {
+    height: 40px;
+    left: 88%;
+    top: 1%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    gap: 50px;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 999;
+    transition: all linear 0.1s;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #21b269bc, #8916ba96 );
+}
+
+/* Additional styling for colors */
+#page2{
+    height: 200vh;
+    width: 100%;
+    padding: 100px;
+    background-image: linear-gradient(to bottom,#21b24075, #8916bab8 );
+    
+}
+
+#page2 img{
+    left: 92%;
+    padding: 0px 30px;
+    height: 10%;
+    position: absolute;
+
+}
+#container {
+    width: 21px;
+    margin: 5px;
+    position: flex;
+    position: relative;
+    display: flex;
+    padding: 18%;
+    top: 3px;
+    left: -100px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+#keyword {
+    text-align: center;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#keyword {
+    display: inline-block; 
+    padding: 5px 70px;
+    margin: 0 10px;
+    font-size: 25px;
+    top: 4%;
+    left: 25%;
+    position: absolute;
+    background-color: rgb(136, 187, 187);
+    color: #000000;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#subkeyword {
+    text-align: center;
+    position: absolute;
+    margin-top: 38px;
+    font-size: 20px;
+    text-align: center;
+    left: 1px;
+    display: inline-block;
+}
+
+#subkeyword img {
+    padding: 5px 12px;
+    position: relative;
+    height: 17%;
+    left: 20px;
+}
+#detail {
+    padding-left: 10%;
+    text-align: left;
+}
+#table {
+ 
+    border-collapse: collapse;
+    display: relative;
+
+    
+}
+
+#td {
+    padding: 7px;
+}
+
+#detail input[type="text"], select {
+    width: calc(200% - 20%); /* Subtracting padding */
+    padding: 2px;
+    border: 4px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#detail button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#detail button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#keyword:hover {
+    background-color: #0b070cce;
+}
+#container2 {
+    width: 10px;
+    margin: 10px;
+    left: 30%;
+    top: 160%;
+    position: absolute;
+    padding: 17%;
+    height: 1%;
+    background-color: #ffffff;
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgb(14, 9, 9);
+}#keyword2 {
+    text-align: center;
+    margin-top: 30px;
+    display: inline-block; 
+    position: absolute;
+    padding: 12px 80px;
+    font-size: 20px;
+    font-weight: 1000;
+    margin: 0 15px;
+    top: 4%;
+    left: 25%;
+    background-color: rgb(136, 187, 187);
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    font-weight: 20;
+}
+#keyword2:hover {
+    background-color: #4d9377e6;
+}
+#detail{
+    position: center;
+    margin-top: 15px;
+    display: flex;
+    
+    
+}
+#container3 {
+    width: 20px;
+    margin: 70px;
+    position: absolute;
+    padding: 17%;
+    height: 6px;
+    top:190%;
+    left: 60%;
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.848);
+
+}
+#keyword3 {
+    text-align: center;
+    margin-top: 50px;
+    position: absolute;
+}
+#keyword3 {
+    display: inline-block; 
+    padding: 10px 80px;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 500;
+    top: 4%;
+    left: 20%;
+    position: absolute;
+    background-color: rgb(136, 187, 187);
+    color: #882137;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+#keyword:hover {
+    background-color: #0b070c;
+}
+#page3{
+    width: 100%;
+    height: 70%;
+    background-image: linear-gradient(to bottom, #2539D0, #8816BA );
+
+}
